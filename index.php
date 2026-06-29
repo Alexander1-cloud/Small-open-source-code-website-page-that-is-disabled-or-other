@@ -1,0 +1,37 @@
+<?php /* It is an open source script for various applications. */
+/* robots.txt and sitemap.xml static and manually edited */
+if (PHP_VERSION_ID < 50329) 
+{
+    echo 'Code for PHP (5.3) and older versions';
+    exit;
+}
+
+ini_set('max_execution_time', 1);/* You cat set max_execution_time more than 1 second if your server work slow */
+
+error_reporting(E_ALL);
+ini_set('display_errors',1);
+
+ini_set('memory_limit', '8388608');/* Memory_limit in bytes. 5242880 bytes = 5 Mbyte */
+
+ini_set('upload_max_filesize', '1M');
+ini_set('post_max_size', '1M');
+
+setlocale(LC_ALL, 'RU.UTF-8');
+
+/* You can choose your time zone. */
+ini_set('date.timezone','Asia/Yekaterinburg');
+
+/* A constant for stopping the work of other scripts of the current application without participation index.php */
+define('A',1);
+
+try
+{
+    /* Controls and cleans $_GET parameters */
+    require_once 'xsscontrol.php';
+    /* Website template with html markup and php code */
+    require_once 'template.php';
+} 
+catch (Exception $error) {
+   
+    echo $error->getMessage();
+}

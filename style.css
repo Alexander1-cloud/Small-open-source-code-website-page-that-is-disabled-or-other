@@ -1,0 +1,22 @@
+@font-face 
+{
+  font-family: 'Inter';
+  src: url('/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body
+{
+    max-width:1680px;
+    background-color:rgb(255,255,0);
+    color:black;
+    font-family:'Inter',sans-serif;
+    text-align:center;
+}
+
+.important-information
+{
+  color:red;  
+  font-size:51px;
+}
