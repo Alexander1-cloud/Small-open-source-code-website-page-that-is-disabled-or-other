@@ -35,6 +35,7 @@ try
     /* Optimizing the browser cache. */
     /*  1.  You can delete lines require_once 'httpheaders.php';, $tempateLastModifiedTime = filemtime('template.php');, $cssLastModifiedTime = filemtime('style.css');.  */
     /*  1.1 If you don't need a cache and you need to make the application simpler. */
+    /*  1.1.2 You should also delete the file httpheaders.php. */
     require_once 'httpheaders.php';
     
     /* Controls and cleans $_GET parameters. */
