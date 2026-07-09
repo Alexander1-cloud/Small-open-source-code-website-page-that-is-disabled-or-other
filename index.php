@@ -26,12 +26,6 @@ define('A',1);
 
 try
 {
-    /* The time when the template file was last modified. */
-    $tempateLastModifiedTime = filemtime('template.php');
-    
-    /* The time when the style file was last modified. */
-    $cssLastModifiedTime = filemtime('style.css');
-    
     /* Controls and cleans $_GET parameters. */
     require_once 'xsscontrol.php';
     
