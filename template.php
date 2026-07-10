@@ -1,6 +1,7 @@
 <?php defined('A') or die; /* This is Open Source script for site template */ ?>
 <html>
 <head>
+<meta name="secret-key" content="79e048ff7d0b8852b861d1246ac32382" />
 <meta charset='UTF-8'>
 <title>Сайт не существует.</title>
 <meta name="description" content="Сайт не существует." />
@@ -11,5 +12,11 @@
 </head>
 <body>
 <div class="important-information">Сайт не существует.</div>
+<div class="section">
+<p>Сегодняшняя дата: <?php echo date('d.m.Y');  ?></p>
+<p>Сегодняшнее время: <?php echo date('H:i');  ?></p>
+<p>По всемирному координированному времени (UTC).</p>
+<p>Для более точного отображения времени необходимо обновлять страницу в браузере.</p>
+</div>
 </body>
 </html>
