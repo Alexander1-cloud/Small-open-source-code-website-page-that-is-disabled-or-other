@@ -1,6 +1,7 @@
 <?php defined('A') or die; /* This is Open Source script for site template */ ?>
 <html>
 <head>
+<?php /* My secret key is Alexander Alexandrovich, you can use your own key or delete the meta tag with the name="secret key". */ ?>
 <meta name="secret-key" content="79e048ff7d0b8852b861d1246ac32382" />
 <meta charset='UTF-8'>
 <title>Сайт не существует.</title>
