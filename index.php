@@ -1,4 +1,4 @@
-<?php /* It is an open source script for various applications. */
+<?php /* It is an open source micro framework for various applications. */
 /* robots.txt and sitemap.xml static and manually edited. */
 if (PHP_VERSION_ID < 50217)
 {
